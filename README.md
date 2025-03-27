@@ -1,12 +1,46 @@
-# React + Vite
+# Workflow Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based workflow management application that allows users to create, configure, and manage workflow nodes using an interactive flowchart. The application provides a React Flow-based visual interface, a configuration panel for node properties, and a data table to track node details.
 
-Currently, two official plugins are available:
+## Features
+- **Interactive Workflow Editor**: Add, move, and delete nodes with a visual drag-and-drop interface.
+- **Configurable Nodes**: Modify node properties dynamically using a right-side configuration panel.
+- **Node Data Table**: View and edit node details in a structured tabular format.
+- **Scroll-to-View Navigation**: Easily switch between the flow editor and the data table with smooth scrolling.
+- **Node Type & Status Styling**: Different styles for task, condition, and notification nodes, as well as active/inactive statuses.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **Frontend**: React, Tailwind CSS, @xyflow/react (React Flow)
+- **State Management**: React Hooks
+- **Form Handling**: react-hook-form
+- **Table Rendering**: TanStack Table (react-table)
 
-## Expanding the ESLint configuration
+## Installation & Setup
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repo/workflow-app.git
+   cd workflow
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the development server:
+   ```sh
+   npm run dev
+   ```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Usage
+- **Creating Nodes**: Click on the canvas to add a new node.
+- **Configuring Nodes**: Select a node to open the right panel and modify its properties.
+- **Deleting Nodes**: Use the delete button in the node panel or table.
+- **Viewing Data Table**: Scroll down or use the "View Table" button to access node details.
+- **Navigating Back**: Click the "Back to Flow" button to return to the workflow editor.
+
+## Future Enhancements
+- Implement backend integration for persistent data storage.
+- Add user authentication and role-based access control.
+- Improve drag-and-drop interactions for better UX.
+- Enhance table filtering and sorting capabilities.
+
+
