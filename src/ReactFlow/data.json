@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nodeType": "Task",
+    "labels": ["Task Name", "Assignee", "Due Date"],
+    "registerValues": ["label", "assignee", "dueDate"]
+  },
+  {
+    "id": 2,
+    "nodeType": "Condition",
+    "labels": ["Condition Type", "Next Step"],
+    "registerValues": ["conditionType", "nextStep"]
+  },
+  {
+    "id": 3,
+    "nodeType": "Notification",
+    "labels": ["Message", "Recipient"],
+    "registerValues": ["message", "recipient"]
+  }
+]
